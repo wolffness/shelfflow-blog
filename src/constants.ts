@@ -19,7 +19,7 @@ interface Social {
 export const SOCIALS: Social[] = [
   {
     name: "Mail",
-    href: "mailto:contato@feed-flow.app",
+    href: "mailto:contato@shelfflow.com.br",
     linkTitle: `Entre em contato com o ${SITE.title}`,
     icon: IconMail,
   },

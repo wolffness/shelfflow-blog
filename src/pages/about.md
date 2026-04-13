@@ -3,24 +3,24 @@ layout: ../layouts/AboutLayout.astro
 title: "Sobre"
 ---
 
-## Sobre o FeedFlow
+## Sobre o ShelfFlow
 
-O **FeedFlow** é uma plataforma de gerenciamento de feeds de produtos para e-commerce. Ajudamos lojistas a gerar feeds XML otimizados para Meta Ads, Google Shopping, TikTok Shop e Pinterest.
+O **ShelfFlow** é um app para Nuvemshop que transforma a homepage da sua loja em uma vitrine inteligente — colocando os produtos certos na frente dos clientes certos, automaticamente.
 
 ### O que fazemos
 
-- **Multi-categorização** — seus produtos em várias categorias no feed
-- **Filtros inteligentes** — controle o que aparece no feed por estoque e preço
-- **Custom Labels automáticos** — segmente campanhas por faixa de preço, desconto e mais
-- **Compliance Checker** — valide seu feed antes de enviar para as plataformas
+- **Vitrines automáticas** — seções de produtos geradas por inteligência de dados na homepage
+- **Curadoria manual** — selecione produtos específicos para destacar em cada vitrine
+- **Shelf+** — recomendações inteligentes com combos, bestsellers e novidades
+- **Analytics** — acompanhe cliques, conversões e adições ao carrinho por vitrine
 
 ### Nosso blog
 
-Aqui compartilhamos dicas, tutoriais e estratégias para ajudar lojistas a otimizar seus feeds e aumentar o retorno sobre investimento em anúncios.
+Aqui compartilhamos dicas, tutoriais e estratégias para lojistas Nuvemshop venderem mais com merchandising inteligente na homepage.
 
 ### Contato
 
-- Email: [contato@feed-flow.app](mailto:contato@feed-flow.app)
-- Site: [feed-flow.app](https://feed-flow.app)
+- Email: [contato@shelfflow.com.br](mailto:contato@shelfflow.com.br)
+- Site: [shelfflow.com.br](https://shelfflow.com.br)
 
 Um produto [Eikonikos](https://eikonikos.com).
