@@ -1,0 +1,23 @@
+export const SITE = {
+  website: "https://blog.shelfflow.com.br/",
+  author: "ShelfFlow",
+  profile: "https://shelfflow.com.br/",
+  desc: "Dicas, tutoriais e estratégias para lojistas Nuvemshop venderem mais com vitrines inteligentes.",
+  title: "ShelfFlow Blog",
+  ogImage: "shelfflow-og.jpg",
+  lightAndDarkMode: true,
+  postPerIndex: 6,
+  postPerPage: 8,
+  scheduledPostMargin: 15 * 60 * 1000,
+  showArchives: true,
+  showBackButton: true,
+  editPost: {
+    enabled: false,
+    text: "",
+    url: "",
+  },
+  dynamicOgImage: true,
+  dir: "ltr",
+  lang: "pt-BR",
+  timezone: "America/Sao_Paulo",
+} as const;

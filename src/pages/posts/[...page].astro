@@ -1,0 +1,44 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import ArticleCard from "@/components/ArticleCard.astro";
+import Pagination from "@/components/Pagination.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import getSortedPosts from "@/utils/getSortedPosts";
+import { SITE } from "@/config";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  return paginate(getSortedPosts(posts), { pageSize: SITE.postPerPage });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+
+<Layout title={`Artigos | ${SITE.title}`}>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="app-layout pb-12">
+    <div class="pt-8 pb-6 border-b border-border mb-8">
+      <h1
+        class="text-2xl sm:text-3xl font-bold mb-1"
+        style="color: var(--foreground); letter-spacing: -0.02em;"
+      >
+        Artigos
+      </h1>
+      <p class="text-sm" style="color: var(--text-secondary);">
+        Todos os artigos publicados no FeedFlow Blog.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {page.data.map(post => <ArticleCard {...post} />)}
+    </div>
+  </main>
+
+  <Pagination {page} />
+  <Footer noMarginTop={page.lastPage > 1} />
+</Layout>

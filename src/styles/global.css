@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@import "./typography.css";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+/* ===== ShelfFlow Design System — Clean White + Indigo ===== */
+
+:root,
+html[data-theme="light"] {
+  --background: #FFFFFF;
+  --foreground: #111827;
+  --accent: #4F46E5;
+  --muted: #F3F4F6;
+  --border: #E5E7EB;
+
+  /* Extended tokens */
+  --bg-surface: #FAFAFA;
+  --bg-elevated: #F9FAFB;
+  --text-secondary: #374151;
+  --text-muted: #6B7280;
+  --accent-light: #EEF2FF;
+  --accent-hover: #4338CA;
+}
+
+html[data-theme="dark"] {
+  --background: #0F172A;
+  --foreground: #F1F5F9;
+  --accent: #818CF8;
+  --muted: #1E293B;
+  --border: #334155;
+
+  /* Extended tokens */
+  --bg-surface: #1E293B;
+  --bg-elevated: #0F172A;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --accent-light: #1E1B4B;
+  --accent-hover: #A5B4FC;
+}
+
+@theme inline {
+  --font-app: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-accent/75;
+    scrollbar-width: auto;
+    scrollbar-color: var(--color-muted) transparent;
+  }
+  html {
+    @apply overflow-y-scroll scroll-smooth;
+  }
+  body {
+    @apply flex min-h-svh flex-col bg-background font-app text-foreground selection:bg-accent/20 selection:text-foreground;
+  }
+  a,
+  button {
+    @apply outline-offset-1 outline-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@utility max-w-app {
+  @apply max-w-3xl;
+}
+
+@utility app-layout {
+  @apply mx-auto w-full max-w-app px-4;
+}
+
+.active-nav {
+  @apply underline decoration-wavy decoration-2 underline-offset-8;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 1rem;
+}

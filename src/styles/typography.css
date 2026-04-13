@@ -1,0 +1,152 @@
+@plugin "@tailwindcss/typography";
+
+@layer base {
+  /* ===== Override default Tailwind Typography styles ===== */
+  .app-prose {
+    @apply prose;
+
+    /* Melhor leitura: linha mais larga e espaçada */
+    --tw-prose-body: var(--foreground);
+    --tw-prose-headings: var(--foreground);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    th {
+      @apply mb-3 font-semibold text-foreground;
+      letter-spacing: -0.01em;
+    }
+
+    /* h3 sem itálico — padrão FeedFlow */
+    h3 {
+      @apply not-italic;
+    }
+
+    h2 {
+      @apply mt-10 mb-4;
+    }
+
+    p,
+    strong,
+    ol,
+    ul,
+    figcaption,
+    table,
+    code {
+      @apply text-foreground;
+    }
+
+    /* Leitura confortável: cor secondary para parágrafos */
+    p {
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    a {
+      @apply wrap-break-word text-accent underline decoration-dashed underline-offset-4 hover:opacity-80 focus-visible:no-underline transition-opacity;
+    }
+
+    ul {
+      @apply overflow-x-clip;
+    }
+
+    li {
+      @apply marker:text-accent;
+      color: var(--text-secondary);
+    }
+
+    hr {
+      @apply border-border;
+    }
+
+    img {
+      @apply mx-auto rounded-xl border border-border;
+    }
+
+    figcaption {
+      @apply opacity-75 text-center;
+      font-size: 0.875rem;
+    }
+
+    table {
+      th,
+      td {
+        @apply border border-border p-2;
+      }
+
+      th {
+        @apply py-1.5;
+        background: var(--muted);
+      }
+
+      code {
+        @apply break-all sm:break-normal;
+      }
+    }
+
+    code {
+      @apply rounded-md p-1 wrap-break-word before:content-none after:content-none font-mono text-sm;
+      background: var(--muted);
+      color: var(--foreground);
+    }
+
+    .astro-code code {
+      @apply flex-[1_0_100%] bg-inherit p-0;
+    }
+
+    blockquote {
+      @apply border-s-accent/80 wrap-break-word;
+      background: var(--accent-light);
+      border-radius: 0 0.5rem 0.5rem 0;
+      padding: 0.75rem 1rem;
+      opacity: 1;
+
+      p {
+        color: var(--text-secondary);
+        margin: 0;
+      }
+    }
+
+    details {
+      @apply inline-block cursor-pointer text-foreground select-none [&_p]:hidden [&_ul]:my-0!;
+    }
+
+    summary {
+      @apply focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-accent focus-visible:outline-dashed;
+    }
+
+    pre {
+      @apply rounded-xl border border-border focus-visible:border-transparent focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-dashed;
+    }
+  }
+
+  /* ===== Code Blocks & Syntax Highlighting ===== */
+  .astro-code {
+    @apply flex border bg-(--shiki-light-bg) text-(--shiki-light) outline-border [&_span]:text-(--shiki-light);
+    font-family: var(--font-jetbrains-mono, "JetBrains Mono", monospace);
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  html[data-theme="dark"] .astro-code {
+    @apply bg-(--shiki-dark-bg) text-(--shiki-dark) [&_span]:text-(--shiki-dark);
+  }
+
+  /* Styles for Shiki transformers */
+  .astro-code {
+    .line.diff.add {
+      @apply relative inline-block w-full bg-green-400/20 before:absolute before:-left-3 before:text-green-500 before:content-['+'];
+    }
+    .line.diff.remove {
+      @apply relative inline-block w-full bg-red-500/20 before:absolute before:-left-3 before:text-red-500 before:content-['-'];
+    }
+    .line.highlighted {
+      @apply inline-block w-full;
+      background: rgba(179, 120, 0, 0.12);
+    }
+    .highlighted-word {
+      @apply rounded-sm border border-border px-0.5 py-px;
+    }
+  }
+}

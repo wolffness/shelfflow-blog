@@ -1,0 +1,60 @@
+backend:
+  name: github
+  repo: wolffness/shelfflow-blog
+  branch: main
+  base_url: https://blog.shelfflow.com.br
+  auth_endpoint: /api/auth
+
+site_url: https://blog.shelfflow.com.br
+display_url: https://blog.shelfflow.com.br
+logo_url: https://shelfflow.com.br/logo.svg
+
+media_folder: "src/assets/images/uploads"
+public_folder: "/src/assets/images/uploads"
+
+slug:
+  encoding: "unicode"
+  clean_accents: true
+
+locale: "pt"
+
+collections:
+  - name: "blog"
+    label: "Artigos"
+    label_singular: "Artigo"
+    folder: "src/data/blog"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    sortable_fields: ["pubDatetime", "title"]
+    summary: "{{title}} — {{pubDatetime}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descrição (SEO)", name: "description", widget: "text" }
+      - { label: "Data de publicação", name: "pubDatetime", widget: "datetime" }
+      - { label: "Data de modificação", name: "modDatetime", widget: "datetime", required: false }
+      - { label: "Autor", name: "author", widget: "string", default: "ShelfFlow" }
+      - { label: "Imagem destaque", name: "ogImage", widget: "image", required: false }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true, default: ["nuvemshop"] }
+      - { label: "Destaque", name: "featured", widget: "boolean", default: false }
+      - { label: "Rascunho", name: "draft", widget: "boolean", default: true }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
+
+  - name: "novidades"
+    label: "Novidades do produto"
+    label_singular: "Novidade"
+    folder: "src/data/novidades"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    sortable_fields: ["pubDatetime", "title"]
+    summary: "{{title}} — {{pubDatetime}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Data de publicação", name: "pubDatetime", widget: "datetime" }
+      - { label: "Autor", name: "author", widget: "string", default: "ShelfFlow" }
+      - { label: "Versão", name: "version", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true, default: ["novidade"] }
+      - { label: "Rascunho", name: "draft", widget: "boolean", default: true }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
