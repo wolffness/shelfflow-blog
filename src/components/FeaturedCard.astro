@@ -23,69 +23,85 @@ const displayTags = tags.slice(0, 3).map(t => t.replace(/-/g, " "));
 
 <a
   href={href}
-  class="group block w-full rounded-2xl border overflow-hidden transition-all"
+  class="group block w-full overflow-hidden rounded-2xl border transition-all"
   style="border-color: var(--border); background: var(--bg-surface);"
   onmouseover="this.style.borderColor='var(--accent)'; this.style.boxShadow='0 8px 32px rgba(179,120,0,0.10)'"
   onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'"
 >
   <!-- Imagem de capa -->
-  {ogImage && (
-    <div class="w-full overflow-hidden" style="height: 260px;">
-      {typeof ogImage === "string" ? (
-        <img src={ogImage} alt={title} class="w-full h-full object-cover" loading="eager" />
-      ) : (
-        <Image src={ogImage} alt={title} class="w-full h-full object-cover" loading="eager" widths={[800, 1200]} sizes="100vw" />
-      )}
-    </div>
-  )}
+  {
+    ogImage && (
+      <div class="w-full overflow-hidden" style="height: 260px;">
+        {typeof ogImage === "string" ? (
+          <img
+            src={ogImage}
+            alt={title}
+            class="h-full w-full object-cover"
+            loading="eager"
+          />
+        ) : (
+          <Image
+            src={ogImage}
+            alt={title}
+            class="h-full w-full object-cover"
+            loading="eager"
+            widths={[800, 1200]}
+            sizes="100vw"
+          />
+        )}
+      </div>
+    )
+  }
 
   <div class="p-7 sm:p-8">
-  <!-- Tags -->
-  {displayTags.length > 0 && (
-    <div class="flex flex-wrap gap-2 mb-4">
-      {displayTags.map(tag => (
-        <span
-          class="text-xs font-semibold px-2.5 py-1 rounded-full capitalize"
-          style="background: var(--accent-light); color: var(--accent);"
-        >
-          {tag}
-        </span>
-      ))}
-    </div>
-  )}
+    <!-- Tags -->
+    {
+      displayTags.length > 0 && (
+        <div class="mb-4 flex flex-wrap gap-2">
+          {displayTags.map(tag => (
+            <span
+              class="rounded-full px-2.5 py-1 text-xs font-semibold capitalize"
+              style="background: var(--accent-light); color: var(--accent);"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      )
+    }
 
-  <!-- Title -->
-  <h2
-    class="text-xl sm:text-2xl font-bold leading-snug mb-3"
-    style="color: var(--foreground); letter-spacing: -0.02em;"
-  >
-    {title}
-  </h2>
+    <!-- Title -->
+    <h2
+      class="mb-3 text-xl leading-snug font-bold sm:text-2xl"
+      style="color: var(--foreground); letter-spacing: -0.02em;"
+    >
+      {title}
+    </h2>
 
-  <!-- Description -->
-  <p
-    class="text-base leading-relaxed mb-5 max-w-2xl"
-    style="color: var(--text-secondary);"
-  >
-    {description}
-  </p>
-
-  <!-- Meta + CTA -->
-  <div class="flex items-center justify-between flex-wrap gap-3">
-    <div
-      class="flex items-center gap-2 text-sm"
+    <!-- Description -->
+    <p
+      class="mb-5 max-w-2xl text-base leading-relaxed"
       style="color: var(--text-secondary);"
     >
-      <time datetime={pubDatetime.toISOString()}>{formattedDate}</time>
-      <span aria-hidden="true">·</span>
-      <span>{readingTime} de leitura</span>
+      {description}
+    </p>
+
+    <!-- Meta + CTA -->
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      <div
+        class="flex items-center gap-2 text-sm"
+        style="color: var(--text-secondary);"
+      >
+        <time datetime={pubDatetime.toISOString()}>{formattedDate}</time>
+        <span aria-hidden="true">·</span>
+        <span>{readingTime} de leitura</span>
+      </div>
+      <span
+        class="inline-flex items-center gap-1 text-sm font-semibold transition-colors"
+        style="color: var(--accent);"
+      >
+        Ler artigo →
+      </span>
     </div>
-    <span
-      class="text-sm font-semibold inline-flex items-center gap-1 transition-colors"
-      style="color: var(--accent);"
-    >
-      Ler artigo →
-    </span>
-  </div>
   </div>
 </a>

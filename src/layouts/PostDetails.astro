@@ -110,29 +110,34 @@ const nextPost =
     </div>
 
     <!-- Imagem de capa -->
-    {initOgImage && (
-      <div class="mt-6 mb-2 overflow-hidden rounded-xl" style="border: 1px solid var(--border);">
-        {typeof initOgImage === "string" ? (
-          <img
-            src={initOgImage}
-            alt={title}
-            class="w-full object-cover"
-            style="max-height: 420px;"
-            loading="eager"
-          />
-        ) : (
-          <Image
-            src={initOgImage}
-            alt={title}
-            class="w-full object-cover"
-            style="max-height: 420px;"
-            loading="eager"
-            widths={[800, 1200]}
-            sizes="(max-width: 768px) 100vw, 800px"
-          />
-        )}
-      </div>
-    )}
+    {
+      initOgImage && (
+        <div
+          class="mt-6 mb-2 overflow-hidden rounded-xl"
+          style="border: 1px solid var(--border);"
+        >
+          {typeof initOgImage === "string" ? (
+            <img
+              src={initOgImage}
+              alt={title}
+              class="w-full object-cover"
+              style="max-height: 420px;"
+              loading="eager"
+            />
+          ) : (
+            <Image
+              src={initOgImage}
+              alt={title}
+              class="w-full object-cover"
+              style="max-height: 420px;"
+              loading="eager"
+              widths={[800, 1200]}
+              sizes="(max-width: 768px) 100vw, 800px"
+            />
+          )}
+        </div>
+      )
+    }
 
     <article
       id="article"

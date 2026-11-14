@@ -44,7 +44,7 @@
     }
 
     a {
-      @apply wrap-break-word text-accent underline decoration-dashed underline-offset-4 hover:opacity-80 focus-visible:no-underline transition-opacity;
+      @apply wrap-break-word text-accent underline decoration-dashed underline-offset-4 transition-opacity hover:opacity-80 focus-visible:no-underline;
     }
 
     ul {
@@ -65,7 +65,7 @@
     }
 
     figcaption {
-      @apply opacity-75 text-center;
+      @apply text-center opacity-75;
       font-size: 0.875rem;
     }
 
@@ -86,7 +86,7 @@
     }
 
     code {
-      @apply rounded-md p-1 wrap-break-word before:content-none after:content-none font-mono text-sm;
+      @apply rounded-md p-1 font-mono text-sm wrap-break-word before:content-none after:content-none;
       background: var(--muted);
       color: var(--foreground);
     }
