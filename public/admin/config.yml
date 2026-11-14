@@ -32,11 +32,37 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descrição (SEO)", name: "description", widget: "text" }
       - { label: "Data de publicação", name: "pubDatetime", widget: "datetime" }
-      - { label: "Data de modificação", name: "modDatetime", widget: "datetime", required: false }
-      - { label: "Autor", name: "author", widget: "string", default: "ShelfFlow" }
-      - { label: "Imagem destaque", name: "ogImage", widget: "image", required: false }
-      - { label: "Tags", name: "tags", widget: "list", allow_add: true, default: ["nuvemshop"] }
-      - { label: "Destaque", name: "featured", widget: "boolean", default: false }
+      - {
+          label: "Data de modificação",
+          name: "modDatetime",
+          widget: "datetime",
+          required: false,
+        }
+      - {
+          label: "Autor",
+          name: "author",
+          widget: "string",
+          default: "ShelfFlow",
+        }
+      - {
+          label: "Imagem destaque",
+          name: "ogImage",
+          widget: "image",
+          required: false,
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "list",
+          allow_add: true,
+          default: ["nuvemshop"],
+        }
+      - {
+          label: "Destaque",
+          name: "featured",
+          widget: "boolean",
+          default: false,
+        }
       - { label: "Rascunho", name: "draft", widget: "boolean", default: true }
       - { label: "Conteúdo", name: "body", widget: "markdown" }
 
@@ -53,8 +79,19 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descrição", name: "description", widget: "text" }
       - { label: "Data de publicação", name: "pubDatetime", widget: "datetime" }
-      - { label: "Autor", name: "author", widget: "string", default: "ShelfFlow" }
+      - {
+          label: "Autor",
+          name: "author",
+          widget: "string",
+          default: "ShelfFlow",
+        }
       - { label: "Versão", name: "version", widget: "string", required: false }
-      - { label: "Tags", name: "tags", widget: "list", allow_add: true, default: ["novidade"] }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "list",
+          allow_add: true,
+          default: ["novidade"],
+        }
       - { label: "Rascunho", name: "draft", widget: "boolean", default: true }
       - { label: "Conteúdo", name: "body", widget: "markdown" }

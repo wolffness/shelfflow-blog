@@ -10,51 +10,72 @@ import { SITE } from "@/config";
 
 const posts = await getCollection("blog");
 const sortedPosts = getSortedPosts(posts);
-const featuredPost = sortedPosts.find(({ data }) => data.featured) ?? sortedPosts[0];
-const otherPosts = sortedPosts.filter(p => p.id !== featuredPost?.id).slice(0, SITE.postPerIndex - 1);
+const featuredPost =
+  sortedPosts.find(({ data }) => data.featured) ?? sortedPosts[0];
+const otherPosts = sortedPosts
+  .filter(p => p.id !== featuredPost?.id)
+  .slice(0, SITE.postPerIndex - 1);
 ---
 
 <Layout>
   <Header />
   <main id="main-content" data-layout="index" class="app-layout">
-
     <!-- Hero -->
-    <section class="pt-10 pb-8 border-b border-border">
-      <p class="text-xs font-semibold uppercase tracking-widest mb-3" style="color: var(--accent);">
+    <section class="border-b border-border pt-10 pb-8">
+      <p
+        class="mb-3 text-xs font-semibold tracking-widest uppercase"
+        style="color: var(--accent);"
+      >
         Blog FeedFlow
       </p>
       <h1
-        class="text-3xl sm:text-4xl font-bold leading-tight mb-4"
+        class="mb-4 text-3xl leading-tight font-bold sm:text-4xl"
         style="color: var(--foreground); letter-spacing: -0.025em;"
       >
         Tudo sobre feeds de produtos<br class="hidden sm:block" /> e anúncios de catálogo
       </h1>
-      <p class="text-base max-w-xl leading-relaxed" style="color: var(--text-secondary);">
-        Dicas práticas, tutoriais e estratégias para lojistas que anunciam no Meta Ads, Google Shopping, TikTok e Pinterest.
+      <p
+        class="max-w-xl text-base leading-relaxed"
+        style="color: var(--text-secondary);"
+      >
+        Dicas práticas, tutoriais e estratégias para lojistas que anunciam no
+        Meta Ads, Google Shopping, TikTok e Pinterest.
       </p>
     </section>
 
     <!-- Artigo em destaque -->
-    {featuredPost && (
-      <section class="pt-10 pb-8 border-b border-border">
-        <h2 class="text-xs font-semibold uppercase tracking-widest mb-5" style="color: var(--text-secondary);">
-          Em destaque
-        </h2>
-        <FeaturedCard {...featuredPost} />
-      </section>
-    )}
+    {
+      featuredPost && (
+        <section class="border-b border-border pt-10 pb-8">
+          <h2
+            class="mb-5 text-xs font-semibold tracking-widest uppercase"
+            style="color: var(--text-secondary);"
+          >
+            Em destaque
+          </h2>
+          <FeaturedCard {...featuredPost} />
+        </section>
+      )
+    }
 
     <!-- Últimos artigos -->
-    {otherPosts.length > 0 && (
-      <section class="pt-10 pb-8 border-b border-border">
-        <h2 class="text-xs font-semibold uppercase tracking-widest mb-5" style="color: var(--text-secondary);">
-          Últimos artigos
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {otherPosts.map(post => <ArticleCard {...post} />)}
-        </div>
-      </section>
-    )}
+    {
+      otherPosts.length > 0 && (
+        <section class="border-b border-border pt-10 pb-8">
+          <h2
+            class="mb-5 text-xs font-semibold tracking-widest uppercase"
+            style="color: var(--text-secondary);"
+          >
+            Últimos artigos
+          </h2>
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {otherPosts.map(post => (
+              <ArticleCard {...post} />
+            ))}
+          </div>
+        </section>
+      )
+    }
 
     <!-- Newsletter CTA -->
     <section class="py-12">
@@ -62,23 +83,30 @@ const otherPosts = sortedPosts.filter(p => p.id !== featuredPost?.id).slice(0, S
         class="rounded-2xl p-8 text-center"
         style="background: var(--accent-light);"
       >
-        <p class="text-xs font-semibold uppercase tracking-widest mb-3" style="color: var(--accent);">
+        <p
+          class="mb-3 text-xs font-semibold tracking-widest uppercase"
+          style="color: var(--accent);"
+        >
           Newsletter
         </p>
         <h2
-          class="text-xl sm:text-2xl font-bold mb-2"
+          class="mb-2 text-xl font-bold sm:text-2xl"
           style="color: var(--foreground); letter-spacing: -0.02em;"
         >
           Receba dicas toda semana
         </h2>
-        <p class="text-sm mb-6 max-w-md mx-auto" style="color: var(--text-secondary);">
-          Estratégias de feed, atualizações de plataformas e boas práticas para anunciar melhor.
+        <p
+          class="mx-auto mb-6 max-w-md text-sm"
+          style="color: var(--text-secondary);"
+        >
+          Estratégias de feed, atualizações de plataformas e boas práticas para
+          anunciar melhor.
         </p>
         <a
           href="https://feed-flow.app"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white transition-colors"
+          class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition-colors"
           style="background: var(--accent); white-space: nowrap;"
           onmouseover="this.style.background='var(--accent-hover)'"
           onmouseout="this.style.background='var(--accent)'"
@@ -87,7 +115,6 @@ const otherPosts = sortedPosts.filter(p => p.id !== featuredPost?.id).slice(0, S
         </a>
       </div>
     </section>
-
   </main>
   <Footer />
 </Layout>

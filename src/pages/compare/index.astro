@@ -1,0 +1,67 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import postFilter from "@/utils/postFilter";
+const comparisons = (await getCollection("comparisons"))
+  .filter(postFilter)
+  .sort((a, b) => a.data.pubDatetime.getTime() - b.data.pubDatetime.getTime());
+---
+
+<Layout
+  title="Compare o ShelfFlow para sua Nuvemshop"
+  description="Compare soluções por tarefa: compre junto, looks, vitrines e gestão. Confira recursos documentados, requisitos e critérios de decisão."
+>
+  <Header />
+  <main id="main-content" class="app-layout py-10">
+    <h1 class="mb-5 text-3xl font-bold">
+      Compare o ShelfFlow para a rotina da sua Nuvemshop
+    </h1>
+    <p class="mb-5">
+      Comece pela tarefa que precisa resolver: sugerir complementos, apresentar
+      looks, organizar vitrines ou preparar campanhas. Compare a operação e a
+      manutenção, além da lista de recursos.
+    </p>
+    <ul class="mb-8 list-disc space-y-2 pl-6">
+      <li>Confira variantes, estoque e o comportamento esperado na loja.</li>
+      <li>
+        Valide superfícies de exibição, compatibilidade e acesso aos recursos.
+      </li>
+      <li>Compare a definição das métricas antes de comparar seus totais.</li>
+      <li>
+        Considere o que o tema já atende e o esforço de manter outra ferramenta.
+      </li>
+    </ul>
+    <h2 class="mb-5 text-2xl font-bold">Comparações publicadas</h2>
+    {
+      comparisons.length ? (
+        <ul class="space-y-6">
+          {comparisons.map(post => (
+            <li class="rounded-lg border border-border p-5">
+              <a
+                class="text-xl font-semibold underline"
+                href={`/compare/${post.id}/`}
+              >
+                {post.data.title}
+              </a>
+              <p class="mt-2">{post.data.description}</p>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p>
+          As comparações estão em preparação e serão adicionadas a esta página
+          conforme o calendário editorial.
+        </p>
+      )
+    }
+    <p class="mt-10">
+      Quer acompanhar o ShelfFlow? <a
+        class="font-semibold underline"
+        href="https://shelfflow.com.br/use">Cadastre seu interesse.</a
+      >
+    </p>
+  </main>
+  <Footer />
+</Layout>
