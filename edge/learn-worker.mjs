@@ -11,7 +11,7 @@ export function rewriteContent(body, type) {
   let text = body.replaceAll('https://blog.shelfflow.com.br', PRIMARY)
     .replaceAll(ORIGIN, PRIMARY);
   if (type.includes('text/html')) {
-    text = text.replace(/\b(href|src|action|poster)=(['"])(\/[^'"]*)\2/g,
+    text = text.replace(/\b(href|src|action|poster|data-backurl)=(['"])(\/[^'"]*)\2/g,
       (_, attr, quote, value) => `${attr}=${quote}${primaryUrl(value)}${quote}`);
   }
   if (type.includes('text/css') || type.includes('text/html')) {

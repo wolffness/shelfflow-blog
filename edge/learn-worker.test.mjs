@@ -7,10 +7,11 @@ test('links, canonical, fonts, XML and search use the primary path', () => {
   assert.equal(primaryUrl('/posts/example/'), '/aprenda/posts/example/');
   assert.equal(primaryUrl('//cdn.example/a'), '//cdn.example/a');
   assert.equal(primaryUrl('/aprenda/'), '/aprenda/');
-  const html = '<a href="/posts/a/">A</a><a href="#b">B</a><img src="/editorial/a.svg"><link rel="canonical" href="https://blog.shelfflow.com.br/posts/a/"><a href="https://shelfflow.com.br/use">Use</a>';
+  const html = '<main data-backurl="/posts"></main><a href="/posts/a/">A</a><a href="#b">B</a><img src="/editorial/a.svg"><link rel="canonical" href="https://blog.shelfflow.com.br/posts/a/"><a href="https://shelfflow.com.br/use">Use</a>';
   const output = rewriteContent(html, 'text/html');
   assert.ok(output.includes('href="/aprenda/posts/a/"'));
   assert.ok(output.includes('src="/aprenda/editorial/a.svg"'));
+  assert.ok(output.includes('data-backurl="/aprenda/posts"'));
   assert.ok(output.includes('href="https://shelfflow.com.br/aprenda/posts/a/"'));
   assert.ok(output.includes('href="#b"'));
   assert.ok(output.includes('href="https://shelfflow.com.br/use"'));
