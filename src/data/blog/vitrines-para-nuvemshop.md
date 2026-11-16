@@ -2,6 +2,7 @@
 title: "Vitrines para Nuvemshop: como organizar produtos por intenção de compra"
 description: "Organize vitrines para Nuvemshop com uma proposta clara, seleção de produtos, posição e acompanhamento usando o ShelfFlow."
 pubDatetime: 2026-11-30T09:00:00.000Z
+ogImage: "https://cdn.ocoya.com/prod/ai/posts/68707675-3750-4008-9a11-905a0982b385.png"
 author: ShelfFlow
 tags: ["nuvemshop", "vitrines", "curadoria"]
 draft: false
@@ -12,6 +13,8 @@ timezone: America/Sao_Paulo
 Criar **vitrines para Nuvemshop** é escolher o que merece atenção e em qual contexto. Uma homepage pode apresentar novidades, sugestões para presentear ou uma seleção para determinada ocasião. O ShelfFlow reúne ferramentas para preparar essas vitrines, revisar a exposição e acompanhar seus sinais de desempenho.
 
 Mostrar mais produtos não significa necessariamente ajudar a escolher. Cada seleção precisa ter uma função na navegação.
+
+Uma vitrine também pode apresentar uma composição. Veja [como o compre o look organiza as peças](/posts/compre-o-look-nuvemshop/) e [quando recomendar produtos complementares](/posts/compre-junto-nuvemshop/).
 
 ## Comece pela intenção de compra
 

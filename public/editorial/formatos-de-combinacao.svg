@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="840" viewBox="0 0 900 840" role="img" aria-labelledby="title desc">
+<title id="title">Compre junto, look ou kit?</title>
+<desc id="desc">Compre junto: Complementos para a mesma necessidade.; Compre o look: Uma composição com acesso às peças.; Kit: Um conjunto com regras próprias de venda.</desc>
+<rect width="900" height="840" rx="24" fill="#FAF8F3"/>
+<g fill="#B37800"><rect x="48" y="44" width="14" height="14"/><rect x="66" y="44" width="14" height="14"/><rect x="48" y="62" width="14" height="14"/></g>
+<text x="100" y="72" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#805800">SHELFFLOW · GUIA VISUAL</text>
+<text x="48" y="132" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#1A1714">Compre junto, look ou kit?</text>
+<rect x="48" y="170" width="804" height="176" rx="14" fill="white" stroke="#E0DCD0"/>
+<rect x="76" y="200" width="56" height="56" fill="#FFF8E6"/>
+<text x="104" y="238" text-anchor="middle" font-family="monospace" font-size="30" font-weight="700" fill="#805800">01</text>
+<text x="156" y="235" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#1A1714">Compre junto</text>
+<text x="76" y="297" font-family="Arial,sans-serif" font-size="27" fill="#5A4E3A">Complementos para a mesma necessidade.</text>
+<rect x="48" y="370" width="804" height="176" rx="14" fill="white" stroke="#E0DCD0"/>
+<rect x="76" y="400" width="56" height="56" fill="#FFF8E6"/>
+<text x="104" y="438" text-anchor="middle" font-family="monospace" font-size="30" font-weight="700" fill="#805800">02</text>
+<text x="156" y="435" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#1A1714">Compre o look</text>
+<text x="76" y="497" font-family="Arial,sans-serif" font-size="27" fill="#5A4E3A">Uma composição com acesso às peças.</text>
+<rect x="48" y="570" width="804" height="176" rx="14" fill="white" stroke="#E0DCD0"/>
+<rect x="76" y="600" width="56" height="56" fill="#FFF8E6"/>
+<text x="104" y="638" text-anchor="middle" font-family="monospace" font-size="30" font-weight="700" fill="#805800">03</text>
+<text x="156" y="635" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#1A1714">Kit</text>
+<text x="76" y="697" font-family="Arial,sans-serif" font-size="27" fill="#5A4E3A">Um conjunto com regras próprias de venda.</text>
+<text x="48" y="810" font-family="monospace" font-size="19" fill="#625A4F">CONCEITOS DIFERENTES. UMA ESCOLHA MAIS CLARA.</text>
+</svg>

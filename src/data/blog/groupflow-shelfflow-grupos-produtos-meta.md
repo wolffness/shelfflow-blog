@@ -2,6 +2,7 @@
 title: "GroupFlow: como conectar a seleção da loja à organização de produtos na Meta"
 description: "Conheça o GroupFlow do ShelfFlow, seus pré-requisitos e o que conferir ao manter grupos de produtos do catálogo da Meta."
 pubDatetime: 2026-12-07T09:00:00.000Z
+ogImage: "https://cdn.ocoya.com/prod/ai/posts/053b25df-68c1-4ece-801d-748365f60875.png"
 author: ShelfFlow
 tags: ["groupflow", "meta", "catalogo"]
 draft: false
@@ -12,6 +13,8 @@ timezone: America/Sao_Paulo
 O **GroupFlow** é o módulo do ShelfFlow voltado à organização de grupos de produtos na Meta. Sua função é aproximar a seleção comercial preparada na loja dos itens usados pelo catálogo, para que a equipe não dependa apenas de copiar e revisar listas manualmente.
 
 Ele atua sobre uma parte específica da operação: os produtos que compõem o grupo. Orçamento, público, criativo e veiculação dos anúncios continuam exigindo decisões próprias.
+
+Antes de conectar a seleção à mídia, entenda as [diferenças entre catálogo, grupo de produtos e conjunto de anúncios](/posts/catalogo-facebook-grupos-produtos-groupflow/). A [organização das vitrines por intenção](/posts/vitrines-para-nuvemshop/) ajuda a definir essa seleção.
 
 ## O problema que o GroupFlow ajuda a resolver
 

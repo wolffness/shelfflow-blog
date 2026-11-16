@@ -2,6 +2,7 @@
 title: "ShelfFlow vs Compre Junto Pro Huapps: o que comparar para sua Nuvemshop"
 description: "Compare ShelfFlow e Compre Junto Pro Huapps por tarefa: recomendações, kits, apresentação, medição e rotina de gestão."
 pubDatetime: 2026-11-26T09:00:00.000Z
+ogImage: "https://cdn.ocoya.com/prod/ai/posts/ff0dc2a1-dd59-4adb-83ea-1b646ec7a1df.png"
 author: ShelfFlow
 tags: ["compare", "compre-junto", "nuvemshop"]
 draft: false
@@ -11,6 +12,8 @@ reviewedOn: 2026-11-14
 Escolher entre **ShelfFlow e Compre Junto Pro Huapps** começa por definir a tarefa. Recomendar itens complementares, criar um kit com produto próprio e organizar a apresentação comercial da loja são necessidades que podem exigir fluxos diferentes.
 
 Esta comparação usa a documentação do ShelfFlow e a listagem oficial do Compre Junto Pro Huapps consultadas em **14/11/2026**. É uma leitura documental: o aplicativo concorrente não foi instalado ou testado nesta revisão.
+
+Para definir a necessidade antes de comparar aplicativos, consulte o [guia de compre junto na Nuvemshop](/posts/compre-junto-nuvemshop/). Se a prioridade for uma composição visual, veja o [guia de compre o look](/posts/compre-o-look-nuvemshop/).
 
 ## Primeiro: você precisa de recomendação ou de um kit?
 

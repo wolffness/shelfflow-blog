@@ -2,6 +2,7 @@
 title: "ShelfFlow vs Compre Junto Funsales: combinações, apresentação e gestão"
 description: "Compare ShelfFlow e Compre Junto Funsales pelas recomendações, variantes, apresentação e rotina comercial da Nuvemshop."
 pubDatetime: 2026-12-21T09:00:00.000Z
+ogImage: "https://cdn.ocoya.com/prod/ai/posts/e4be819b-8912-42cb-ac8b-3ae858875b24.png"
 author: ShelfFlow
 tags: ["compare", "compre-junto", "nuvemshop"]
 draft: false
@@ -11,6 +12,8 @@ reviewedOn: 2026-11-14
 Comparar **ShelfFlow e Compre Junto Funsales** exige identificar primeiro qual produto da Funsales está sendo avaliado. O aplicativo Compre Junto e o Kit de Produtos não devem ser tratados como a mesma oferta apenas porque os nomes aparecem associados.
 
 Esta página considera o **Compre Junto Funsales** e usa documentação consultada em **14/11/2026**. O concorrente não foi instalado nem testado nesta revisão.
+
+Comece pelo [guia de combinações complementares](/posts/compre-junto-nuvemshop/). Para ampliar a avaliação, consulte também o [comparativo com Compre Junto Pro Huapps](/compare/compre-junto-pro-huapps/).
 
 ## Qual tarefa está sendo comparada?
 

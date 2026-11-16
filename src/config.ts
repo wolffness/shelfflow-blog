@@ -4,7 +4,8 @@ export const SITE = {
   profile: "https://shelfflow.com.br/",
   desc: "Dicas, tutoriais e estratégias para lojistas Nuvemshop venderem mais com vitrines inteligentes.",
   title: "ShelfFlow Blog",
-  ogImage: "shelfflow-og.jpg",
+  ogImage:
+    "https://cdn.ocoya.com/prod/ai/posts/480dffb4-4194-4833-b4e3-72ad166cfd51.png",
   lightAndDarkMode: true,
   postPerIndex: 6,
   postPerPage: 8,

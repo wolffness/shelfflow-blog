@@ -2,6 +2,7 @@
 title: "Como montar e publicar um look no ShelfFlow para sua loja Nuvemshop"
 description: "Prepare a imagem, selecione os produtos, marque os pontos e confira a publicação de um look no ShelfFlow para Nuvemshop."
 pubDatetime: 2026-12-10T09:00:00.000Z
+ogImage: "https://cdn.ocoya.com/prod/ai/posts/d9c4d0c7-7f2c-4330-8ee5-c45153e5eff9.png"
 author: ShelfFlow
 tags: ["tutorial", "shop-the-look", "nuvemshop"]
 draft: false
@@ -12,6 +13,8 @@ timezone: America/Sao_Paulo
 Para **montar um look no ShelfFlow**, você prepara uma composição, relaciona os produtos do catálogo à imagem e revisa a exposição antes de publicar. A tarefa só termina quando a experiência aparece corretamente na loja.
 
 Este roteiro segue o fluxo documentado do produto. Os nomes apresentados na interface podem variar conforme a versão; use a área de looks, também chamada Shop the Look.
+
+Para decidir o que a composição precisa comunicar, consulte o [guia de compre o look na Nuvemshop](/posts/compre-o-look-nuvemshop/). Se estiver avaliando ferramentas, veja a [comparação com Shop the Look Appsnube](/compare/shop-the-look-appsnube/).
 
 ## Antes de abrir o editor
 

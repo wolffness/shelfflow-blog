@@ -2,6 +2,7 @@
 title: "Como preparar uma campanha temporária na Nuvemshop com o ShelfFlow"
 description: "Organize seleção, conteúdo, início, término e conferência de uma campanha temporária na Nuvemshop com o ShelfFlow."
 pubDatetime: 2026-12-17T09:00:00.000Z
+ogImage: "https://cdn.ocoya.com/prod/ai/posts/cd76a411-8358-4131-b859-65687bca4e11.png"
 author: ShelfFlow
 tags: ["tutorial", "campanhas", "nuvemshop"]
 draft: false
@@ -12,6 +13,8 @@ timezone: America/Sao_Paulo
 Preparar uma **campanha temporária na Nuvemshop** exige combinar proposta, produtos, conteúdo e horário de exibição. No ShelfFlow, a campanha usa o editor das vitrines com o contexto promocional e pode reunir recursos como banner e período de exposição.
 
 O objetivo deste roteiro é preparar e conferir a operação antes do dia da ação. Agendar uma vitrine não deve ser confundido com publicar um produto novo ou garantir que qualquer regra de preço foi aplicada.
+
+Comece pela [seleção de produtos da vitrine](/posts/vitrines-para-nuvemshop/). Quando houver mídia de catálogo, confira também [como o GroupFlow organiza os grupos na Meta](/posts/groupflow-shelfflow-grupos-produtos-meta/).
 
 ## 1. Defina o objetivo e o período
 
