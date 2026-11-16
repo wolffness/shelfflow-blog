@@ -2,6 +2,7 @@
 title: "Como analisar impressões, cliques, carrinhos e receita das vitrines no ShelfFlow"
 description: "Entenda as métricas de vitrine do ShelfFlow, diferencie receita atribuída de incremento e escolha o próximo teste com mais contexto."
 pubDatetime: 2026-12-23T09:00:00.000Z
+ogImage: "https://cdn.ocoya.com/prod/ai/posts/3df805ba-7f9c-4464-a1bb-28dbad0984b6.png"
 author: ShelfFlow
 tags: ["tutorial", "analytics", "vitrines"]
 draft: false
@@ -12,6 +13,8 @@ timezone: America/Sao_Paulo
 Analisar o **desempenho das vitrines** começa por separar perguntas. A vitrine foi exibida? Alguém explorou seus produtos? Houve avanço para o carrinho? Qual receita está associada àquela exposição ou interação segundo a definição usada pelo sistema?
 
 O ShelfFlow apresenta métricas para orientar essas decisões. Nenhum número isolado explica toda a experiência de compra.
+
+Use os dados para revisar uma ação concreta, como uma [campanha temporária](/posts/campanha-temporaria-nuvemshop-shelfflow/) ou um [look publicado na loja](/posts/como-montar-publicar-look-shelfflow/). Assim, a leitura das métricas fica ligada à decisão comercial.
 
 ## Antes de comparar, confira período e atualização
 

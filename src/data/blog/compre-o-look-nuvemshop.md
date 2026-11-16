@@ -2,6 +2,7 @@
 title: "Compre o look na Nuvemshop: como apresentar as peças de uma composição com o ShelfFlow"
 description: "Veja como organizar fotos, peças, variantes e disponibilidade para criar uma experiência de compre o look na Nuvemshop com o ShelfFlow."
 pubDatetime: 2026-11-23T09:00:00.000Z
+ogImage: "https://cdn.ocoya.com/prod/ai/posts/14767682-c252-46ea-ad0c-a3e582f18780.png"
 author: ShelfFlow
 tags: ["nuvemshop", "shop-the-look", "looks"]
 draft: false
@@ -12,6 +13,8 @@ timezone: America/Sao_Paulo
 O **compre o look na Nuvemshop** aproxima a inspiração da escolha dos produtos. Em vez de mostrar uma composição e esperar que a pessoa procure cada peça pelo catálogo, a loja apresenta os itens ligados à imagem. No ShelfFlow, o Shop the Look permite preparar fotos com produtos marcados e revisar sua publicação.
 
 A proposta pode servir a moda, acessórios, decoração e outros catálogos em que os produtos fazem sentido em conjunto. O critério é a composição, não o segmento da loja.
+
+Se a dúvida é qual formato usar, comece pelas [diferenças entre compre junto, look e kit](/posts/compre-junto-nuvemshop/#compre-junto-look-e-kit-três-decisões-diferentes). Aqui, o foco é a composição visual e o acesso às peças.
 
 ## O que torna uma foto comprável
 

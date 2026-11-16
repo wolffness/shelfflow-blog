@@ -2,6 +2,7 @@
 title: "Compre junto na Nuvemshop: como escolher combinações e acompanhar resultados"
 description: "Aprenda a selecionar produtos complementares, conferir estoque e avaliar o compre junto na Nuvemshop com o ShelfFlow."
 pubDatetime: 2026-11-16T09:00:00.000Z
+ogImage: "https://cdn.ocoya.com/prod/ai/posts/480dffb4-4194-4833-b4e3-72ad166cfd51.png"
 author: ShelfFlow
 tags: ["nuvemshop", "compre-junto", "merchandising"]
 draft: false
@@ -18,6 +19,14 @@ O ponto de partida é comercial: para qual ocasião, uso ou problema você está
 No compre junto, você recomenda produtos complementares. Um look apresenta uma composição visual e ajuda o visitante a encontrar suas peças. Um kit pode representar um conjunto vendido como produto próprio, com regras específicas de preço e estoque.
 
 Esses formatos podem se aproximar na apresentação, mas não são equivalentes na operação. Criar uma recomendação no ShelfFlow não significa criar um novo SKU de kit na Nuvemshop. Antes de configurar, defina se a pessoa poderá escolher itens separadamente ou se você precisa vender um conjunto fechado.
+
+| Formato       | O que apresenta                          | O que conferir                            |
+| ------------- | ---------------------------------------- | ----------------------------------------- |
+| Compre junto  | Produtos que atendem à mesma necessidade | Complementaridade e disponibilidade       |
+| Compre o look | Peças de uma composição visual           | Foto, variantes e acesso às peças         |
+| Kit           | Um conjunto vendido sob regras próprias  | SKU, preço e estoque da solução escolhida |
+
+![Compre junto recomenda complementos; compre o look apresenta uma composição; kit reúne um conjunto com regras próprias.](/editorial/formatos-de-combinacao.svg)
 
 ## Como escolher uma combinação útil
 

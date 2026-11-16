@@ -33,19 +33,22 @@ const displayTags = tags.slice(0, 2).map(t => t.replace(/-/g, " "));
     <!-- Thumbnail -->
     {
       ogImage && (
-        <div class="w-full overflow-hidden" style="height: 180px;">
+        <div
+          class="w-full overflow-hidden"
+          style="aspect-ratio: 1; background: var(--muted);"
+        >
           {typeof ogImage === "string" ? (
             <img
               src={ogImage}
               alt={title}
-              class="h-full w-full object-cover"
+              class="h-full w-full object-contain"
               loading="lazy"
             />
           ) : (
             <Image
               src={ogImage}
               alt={title}
-              class="h-full w-full object-cover"
+              class="h-full w-full object-contain"
               loading="lazy"
               widths={[400, 800]}
               sizes="(max-width: 640px) 100vw, 400px"

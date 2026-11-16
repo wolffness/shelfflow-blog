@@ -2,6 +2,7 @@
 title: "ShelfFlow ou recursos do tema Nuvemshop: quando sua vitrine precisa de mais controle"
 description: "Avalie quando os recursos nativos da Nuvemshop atendem sua loja e quando vale comparar a gestão de vitrines com o ShelfFlow."
 pubDatetime: 2026-12-14T09:00:00.000Z
+ogImage: "https://cdn.ocoya.com/prod/ai/posts/00f1644a-fd81-416c-9e2e-c11916dd83d2.png"
 author: ShelfFlow
 tags: ["compare", "vitrines", "nuvemshop"]
 draft: false
@@ -13,6 +14,8 @@ A comparação entre **ShelfFlow e recursos nativos da Nuvemshop** começa com u
 Um app não precisa ser a primeira resposta. Se o tema atende sua apresentação de produtos e a manutenção funciona para a equipe, existe valor em aproveitar essa estrutura.
 
 Esta página reúne critérios e documentação consultada em **14/11/2026**. Recursos e nomes de opções variam conforme tema, versão e configuração.
+
+Antes de adicionar uma ferramenta, defina se você precisa de [vitrines organizadas por intenção](/posts/vitrines-para-nuvemshop/), [looks com acesso às peças](/posts/compre-o-look-nuvemshop/) ou [recomendações complementares](/posts/compre-junto-nuvemshop/).
 
 ## O que vale conferir no tema
 

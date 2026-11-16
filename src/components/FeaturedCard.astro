@@ -23,7 +23,7 @@ const displayTags = tags.slice(0, 3).map(t => t.replace(/-/g, " "));
 
 <a
   href={href}
-  class="group block w-full overflow-hidden rounded-2xl border transition-all"
+  class="featured-story group block w-full overflow-hidden rounded-2xl border transition-all"
   style="border-color: var(--border); background: var(--bg-surface);"
   onmouseover="this.style.borderColor='var(--accent)'; this.style.boxShadow='0 8px 32px rgba(179,120,0,0.10)'"
   onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'"
@@ -31,19 +31,19 @@ const displayTags = tags.slice(0, 3).map(t => t.replace(/-/g, " "));
   <!-- Imagem de capa -->
   {
     ogImage && (
-      <div class="w-full overflow-hidden" style="height: 260px;">
+      <div class="featured-image w-full overflow-hidden">
         {typeof ogImage === "string" ? (
           <img
             src={ogImage}
             alt={title}
-            class="h-full w-full object-cover"
+            class="h-full w-full object-contain"
             loading="eager"
           />
         ) : (
           <Image
             src={ogImage}
             alt={title}
-            class="h-full w-full object-cover"
+            class="h-full w-full object-contain"
             loading="eager"
             widths={[800, 1200]}
             sizes="100vw"

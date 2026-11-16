@@ -2,6 +2,7 @@
 title: "Catálogo de produtos no Facebook: como organizar seleções para campanhas com o GroupFlow"
 description: "Entenda catálogo, grupo de produtos e conjunto de anúncios e organize a seleção da sua Nuvemshop para campanhas na Meta com o GroupFlow."
 pubDatetime: 2026-11-19T09:00:00.000Z
+ogImage: "https://cdn.ocoya.com/prod/ai/posts/053b25df-68c1-4ece-801d-748365f60875.png"
 author: ShelfFlow
 tags: ["meta", "groupflow", "catalogo"]
 draft: false
@@ -12,6 +13,10 @@ timezone: America/Sao_Paulo
 Organizar um **catálogo de produtos no Facebook** envolve mais do que enviar os itens da loja para a Meta. A campanha pode precisar de uma seleção específica: uma coleção, uma ocasião ou os produtos de uma página comercial. O GroupFlow, módulo do ShelfFlow, apoia a manutenção desses grupos de produtos.
 
 Este roteiro acompanha o caminho entre a seleção da loja e o catálogo. A configuração e a veiculação dos anúncios continuam no ambiente da Meta.
+
+A seleção comercial vem antes da mídia. O mesmo cuidado aparece ao [escolher combinações de compre junto](/posts/compre-junto-nuvemshop/): os produtos precisam compartilhar uma intenção clara.
+
+![Catálogo contém os produtos, grupo seleciona itens e conjunto de anúncios define público, orçamento e entrega.](/editorial/catalogo-meta.svg)
 
 ## Catálogo, grupo de produtos e conjunto de anúncios
 

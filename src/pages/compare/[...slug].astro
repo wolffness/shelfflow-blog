@@ -1,5 +1,6 @@
 ---
 import { getCollection, render, type CollectionEntry } from "astro:content";
+import RelatedReading from "@/components/RelatedReading.astro";
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
@@ -34,8 +35,24 @@ const { Content } = await render(post);
           post.data.reviewedOn.toLocaleDateString("pt-BR", { timeZone: "UTC" })
         }
       </p>
-      <div class="prose max-w-none dark:prose-invert"><Content /></div>
+      {
+        post.data.ogImage && (
+          <img
+            src={post.data.ogImage}
+            alt={post.data.title}
+            class="comparison-cover"
+            width="1024"
+            height="1024"
+          />
+        )
+      }
+      <div class="app-prose w-full max-w-none"><Content /></div>
     </article>
+    <RelatedReading
+      currentId={post.id}
+      collection="comparisons"
+      tags={post.data.tags}
+    />
   </main>
   <Footer />
 </Layout>

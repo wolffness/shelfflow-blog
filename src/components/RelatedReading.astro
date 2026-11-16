@@ -1,0 +1,66 @@
+---
+import { getCollection } from "astro:content";
+import postFilter from "@/utils/postFilter";
+import { getPath } from "@/utils/getPath";
+
+type Props = {
+  currentId: string;
+  collection: "blog" | "comparisons";
+  tags: string[];
+};
+const { currentId, collection, tags } = Astro.props;
+const entries = [
+  ...(await getCollection("blog")).filter(postFilter).map(post => ({
+    id: post.id,
+    collection: "blog",
+    data: post.data,
+    href: getPath(post.id, post.filePath),
+  })),
+  ...(await getCollection("comparisons")).filter(postFilter).map(post => ({
+    id: post.id,
+    collection: "comparisons",
+    data: post.data,
+    href: `/compare/${post.id}/`,
+  })),
+];
+const related = entries
+  .filter(entry => entry.id !== currentId || entry.collection !== collection)
+  .map(entry => ({
+    ...entry,
+    score: entry.data.tags.filter(tag => tags.includes(tag)).length,
+  }))
+  .filter(entry => entry.score > 0)
+  .sort(
+    (a, b) =>
+      b.score - a.score ||
+      b.data.pubDatetime.getTime() - a.data.pubDatetime.getTime()
+  )
+  .slice(0, 3);
+---
+
+{
+  related.length > 0 && (
+    <aside
+      class="related-reading"
+      aria-label="Continue a leitura"
+      data-pagefind-ignore
+    >
+      <p class="editorial-eyebrow">Continue a leitura</p>
+      <ul>
+        {related.map(entry => (
+          <li>
+            <a href={entry.href}>
+              <span class="related-kind">
+                {entry.collection === "comparisons"
+                  ? "Comparação"
+                  : "Guia prático"}
+              </span>
+              <strong>{entry.data.title}</strong>
+              <span aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  )
+}
