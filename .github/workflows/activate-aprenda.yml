@@ -1,0 +1,50 @@
+name: Activate Aprenda on the primary domain
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Deploy to Cloudflare Pages]
+    types: [completed]
+
+permissions:
+  contents: read
+  deployments: write
+
+concurrency:
+  group: activate-aprenda
+  cancel-in-progress: false
+
+jobs:
+  activate:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node --test edge/*.test.mjs
+      - run: node scripts/editorial-links.test.mjs
+      - name: Deploy public content routing worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --config edge/wrangler.jsonc
+      - name: Activate routes with rollback and verify the primary site
+        run: node edge/activate-routes.mjs
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Verify old links preserve the destination and tracking
+        run: |
+          curl --fail --silent --show-error --head 'https://blog.shelfflow.com.br/posts/compre-junto-nuvemshop/?utm_source=facebook' > redirect-check.txt
+          grep -i '^location: https://shelfflow.com.br/aprenda/posts/compre-junto-nuvemshop/?utm_source=facebook' redirect-check.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: aprenda-route-snapshot
+          path: edge-route-backup.json
+          if-no-files-found: ignore

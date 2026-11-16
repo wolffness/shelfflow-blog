@@ -1,7 +1,7 @@
 ---
 title: "ShelfFlow ou recursos do tema Nuvemshop: quando sua vitrine precisa de mais controle"
 description: "Avalie quando os recursos nativos da Nuvemshop atendem sua loja e quando vale comparar a gestão de vitrines com o ShelfFlow."
-pubDatetime: 2026-12-14T09:00:00.000Z
+pubDatetime: 2026-11-16T09:08:00.000Z
 ogImage: "https://cdn.ocoya.com/prod/ai/posts/00f1644a-fd81-416c-9e2e-c11916dd83d2.png"
 author: ShelfFlow
 tags: ["compare", "vitrines", "nuvemshop"]

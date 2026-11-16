@@ -1,7 +1,7 @@
 ---
 title: "Compre o look na Nuvemshop: como apresentar as peças de uma composição com o ShelfFlow"
 description: "Veja como organizar fotos, peças, variantes e disponibilidade para criar uma experiência de compre o look na Nuvemshop com o ShelfFlow."
-pubDatetime: 2026-11-23T09:00:00.000Z
+pubDatetime: 2026-11-16T09:02:00.000Z
 ogImage: "https://cdn.ocoya.com/prod/ai/posts/14767682-c252-46ea-ad0c-a3e582f18780.png"
 author: ShelfFlow
 tags: ["nuvemshop", "shop-the-look", "looks"]

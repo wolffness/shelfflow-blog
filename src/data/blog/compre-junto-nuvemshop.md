@@ -6,7 +6,7 @@ ogImage: "https://cdn.ocoya.com/prod/ai/posts/480dffb4-4194-4833-b4e3-72ad166cfd
 author: ShelfFlow
 tags: ["nuvemshop", "compre-junto", "merchandising"]
 draft: false
-featured: false
+featured: true
 timezone: America/Sao_Paulo
 ---
 

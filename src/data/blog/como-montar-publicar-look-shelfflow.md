@@ -1,7 +1,7 @@
 ---
 title: "Como montar e publicar um look no ShelfFlow para sua loja Nuvemshop"
 description: "Prepare a imagem, selecione os produtos, marque os pontos e confira a publicação de um look no ShelfFlow para Nuvemshop."
-pubDatetime: 2026-12-10T09:00:00.000Z
+pubDatetime: 2026-11-16T09:07:00.000Z
 ogImage: "https://cdn.ocoya.com/prod/ai/posts/d9c4d0c7-7f2c-4330-8ee5-c45153e5eff9.png"
 author: ShelfFlow
 tags: ["tutorial", "shop-the-look", "nuvemshop"]

@@ -1,7 +1,7 @@
 ---
 title: "GroupFlow: como conectar a seleção da loja à organização de produtos na Meta"
 description: "Conheça o GroupFlow do ShelfFlow, seus pré-requisitos e o que conferir ao manter grupos de produtos do catálogo da Meta."
-pubDatetime: 2026-12-07T09:00:00.000Z
+pubDatetime: 2026-11-16T09:06:00.000Z
 ogImage: "https://cdn.ocoya.com/prod/ai/posts/053b25df-68c1-4ece-801d-748365f60875.png"
 author: ShelfFlow
 tags: ["groupflow", "meta", "catalogo"]

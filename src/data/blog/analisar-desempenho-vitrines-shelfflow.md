@@ -1,7 +1,7 @@
 ---
 title: "Como analisar impressões, cliques, carrinhos e receita das vitrines no ShelfFlow"
 description: "Entenda as métricas de vitrine do ShelfFlow, diferencie receita atribuída de incremento e escolha o próximo teste com mais contexto."
-pubDatetime: 2026-12-23T09:00:00.000Z
+pubDatetime: 2026-11-16T09:11:00.000Z
 ogImage: "https://cdn.ocoya.com/prod/ai/posts/3df805ba-7f9c-4464-a1bb-28dbad0984b6.png"
 author: ShelfFlow
 tags: ["tutorial", "analytics", "vitrines"]

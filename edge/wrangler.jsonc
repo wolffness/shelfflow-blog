@@ -1,0 +1,8 @@
+{
+  "name": "shelfflow-learn",
+  "main": "learn-worker.mjs",
+  "account_id": "9711df8ca0f91c9e7ab769df047dd3d6",
+  "compatibility_date": "2026-11-16",
+  "workers_dev": false,
+  "services": [{ "binding": "MARKETING", "service": "shelfflow-use" }]
+}

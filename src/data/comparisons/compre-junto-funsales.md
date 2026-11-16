@@ -1,7 +1,7 @@
 ---
 title: "ShelfFlow vs Compre Junto Funsales: combinações, apresentação e gestão"
 description: "Compare ShelfFlow e Compre Junto Funsales pelas recomendações, variantes, apresentação e rotina comercial da Nuvemshop."
-pubDatetime: 2026-12-21T09:00:00.000Z
+pubDatetime: 2026-11-16T09:10:00.000Z
 ogImage: "https://cdn.ocoya.com/prod/ai/posts/e4be819b-8912-42cb-ac8b-3ae858875b24.png"
 author: ShelfFlow
 tags: ["compare", "compre-junto", "nuvemshop"]
