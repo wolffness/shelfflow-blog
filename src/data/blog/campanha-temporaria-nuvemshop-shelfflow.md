@@ -1,7 +1,7 @@
 ---
 title: "Como preparar uma campanha temporária na Nuvemshop com o ShelfFlow"
 description: "Organize seleção, conteúdo, início, término e conferência de uma campanha temporária na Nuvemshop com o ShelfFlow."
-pubDatetime: 2026-12-17T09:00:00.000Z
+pubDatetime: 2026-11-16T09:09:00.000Z
 ogImage: "https://cdn.ocoya.com/prod/ai/posts/cd76a411-8358-4131-b859-65687bca4e11.png"
 author: ShelfFlow
 tags: ["tutorial", "campanhas", "nuvemshop"]

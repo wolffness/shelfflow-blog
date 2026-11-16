@@ -1,7 +1,7 @@
 ---
 title: "Vitrines para Nuvemshop: como organizar produtos por intenção de compra"
 description: "Organize vitrines para Nuvemshop com uma proposta clara, seleção de produtos, posição e acompanhamento usando o ShelfFlow."
-pubDatetime: 2026-11-30T09:00:00.000Z
+pubDatetime: 2026-11-16T09:04:00.000Z
 ogImage: "https://cdn.ocoya.com/prod/ai/posts/68707675-3750-4008-9a11-905a0982b385.png"
 author: ShelfFlow
 tags: ["nuvemshop", "vitrines", "curadoria"]

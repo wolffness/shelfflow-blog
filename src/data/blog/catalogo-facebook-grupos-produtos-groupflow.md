@@ -1,7 +1,7 @@
 ---
 title: "Catálogo de produtos no Facebook: como organizar seleções para campanhas com o GroupFlow"
 description: "Entenda catálogo, grupo de produtos e conjunto de anúncios e organize a seleção da sua Nuvemshop para campanhas na Meta com o GroupFlow."
-pubDatetime: 2026-11-19T09:00:00.000Z
+pubDatetime: 2026-11-16T09:01:00.000Z
 ogImage: "https://cdn.ocoya.com/prod/ai/posts/053b25df-68c1-4ece-801d-748365f60875.png"
 author: ShelfFlow
 tags: ["meta", "groupflow", "catalogo"]

@@ -1,7 +1,7 @@
 ---
 title: "ShelfFlow vs Shop the Look Appsnube: looks, gestão e acompanhamento"
 description: "Compare ShelfFlow e Shop the Look Appsnube pela criação dos looks, exposição, atribuição e manutenção da operação."
-pubDatetime: 2026-12-03T09:00:00.000Z
+pubDatetime: 2026-11-16T09:05:00.000Z
 ogImage: "https://cdn.ocoya.com/prod/ai/posts/174de68c-dc57-40d2-a7c2-6a0d079bc7fd.png"
 author: ShelfFlow
 tags: ["compare", "looks", "nuvemshop"]
